@@ -136,7 +136,7 @@ font-weight: 700;
     position: absolute;
     top: 10px;
     right: 10px;
-    background: white;
+    background: transparent;
     border: none;
     font-size: 24px;
     cursor: pointer;
@@ -171,8 +171,8 @@ menu-content {
 .close-btn {
     position: absolute;
     top: 10px;
-    left: -40px; /* Adjust the position to ensure it's visible */
-    background: white;
+    left: -60px; Adjust the position to ensure it's visible
+    background: transparent;
     border: none;
     font-size: 24px;
     cursor: pointer;
@@ -181,3 +181,18 @@ menu-content {
     color:white;
 }
 
+
+/* Media query for screens below 1000px */
+@media screen and (max-width: 1000px) {
+    /* Hide navigation and search elements */
+    .headerlist {
+        display: none;
+    }
+    .headersearch {
+        display: none;
+    }
+    /* Adjust grid columns for header section */
+    .header-sec {
+        grid-template-columns: 1fr 1fr; /* Adjust column sizes to show only logo and right corner button */
+    }
+}
