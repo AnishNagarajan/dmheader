@@ -78,7 +78,7 @@ font-weight: 700;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     z-index: 999; 
-    
+   
     /*Ensure the menu content is above other elements */
 }
 
@@ -182,17 +182,25 @@ menu-content {
 }
 
 
+
 /* Media query for screens below 1000px */
 @media screen and (max-width: 1000px) {
     /* Hide navigation and search elements */
     .headerlist {
         display: none;
     }
+    .menu-content-inner{
+        left:-3%;
+        top:25%;
+    }
+    .menu-content-inner p{
+        margin:2rem;
+    }
     .headersearch {
         display: none;
     }
-    /* Adjust grid columns for header section */
+    
     .header-sec {
-        grid-template-columns: 1fr 1fr; /* Adjust column sizes to show only logo and right corner button */
-    }
+        grid-template-columns: 1fr 1fr;
+         
 }
